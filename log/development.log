@@ -1,0 +1,508 @@
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-03-02 00:08:57) [GET]
+
+Mongo::ConnectionFailure (failed to connect to any given host:port):
+  mongo (0.18.3) lib/./lib/mongo/connection.rb:327:in `connect_to_master'
+  mongo (0.18.3) lib/./lib/mongo/connection.rb:121:in `initialize'
+  /opt/local/lib/ruby/gems/1.8/gems/mongo_mapper-0.7.0/lib/mongo_mapper.rb:36:in `new'
+  /opt/local/lib/ruby/gems/1.8/gems/mongo_mapper-0.7.0/lib/mongo_mapper.rb:36:in `connection'
+  /opt/local/lib/ruby/gems/1.8/gems/mongo_mapper-0.7.0/lib/mongo_mapper.rb:61:in `database'
+  /opt/local/lib/ruby/gems/1.8/gems/mongo_mapper-0.7.0/lib/mongo_mapper/document.rb:210:in `database'
+  /opt/local/lib/ruby/gems/1.8/gems/mongo_mapper-0.7.0/lib/mongo_mapper/document.rb:225:in `collection'
+  /opt/local/lib/ruby/gems/1.8/gems/mongo_mapper-0.7.0/lib/mongo_mapper/document.rb:306:in `find_many'
+  /opt/local/lib/ruby/gems/1.8/gems/mongo_mapper-0.7.0/lib/mongo_mapper/document.rb:102:in `all'
+  app/controllers/projects_controller.rb:3:in `index'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (100.4ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-03-02 00:12:11) [GET]
+Rendering template within layouts/application
+Rendering projects/index
+Completed in 61ms (View: 53, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#new (for 127.0.0.1 at 2010-03-02 00:12:13) [GET]
+Rendering template within layouts/application
+Rendering projects/new
+Rendered projects/_form (3.3ms)
+Completed in 17ms (View: 12, DB: 0) | 200 OK [http://localhost/projects/new]
+
+
+Processing ProjectsController#create (for 127.0.0.1 at 2010-03-02 00:12:19) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"JIEv1on9PUTnOe8+FYsULuYYWTz8JVqHzqF650FPkZg=", "project"=>{"name"=>"lalala"}}
+Redirected to http://localhost:3000/projects/4b8bd95399e0bf5acf000002
+Completed in 8ms (DB: 0) | 302 Found [http://localhost/projects]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-03-02 00:12:19) [GET]
+  Parameters: {"id"=>"4b8bd95399e0bf5acf000002"}
+Rendering template within layouts/application
+Rendering projects/show
+Completed in 1131ms (View: 11, DB: 0) | 200 OK [http://localhost/projects/4b8bd95399e0bf5acf000002]
+
+
+Processing ProjectsController#edit (for 127.0.0.1 at 2010-03-02 00:12:23) [GET]
+  Parameters: {"id"=>"4b8bd95399e0bf5acf000002"}
+Rendering template within layouts/application
+Rendering projects/edit
+Rendered projects/_form (3.1ms)
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://localhost/projects/4b8bd95399e0bf5acf000002/edit]
+
+
+Processing ProjectsController#update (for 127.0.0.1 at 2010-03-02 00:12:27) [PUT]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"JIEv1on9PUTnOe8+FYsULuYYWTz8JVqHzqF650FPkZg=", "id"=>"4b8bd95399e0bf5acf000002", "project"=>{"name"=>"lalalal"}}
+Redirected to http://localhost:3000/projects/4b8bd95399e0bf5acf000002
+Completed in 8ms (DB: 0) | 302 Found [http://localhost/projects/4b8bd95399e0bf5acf000002]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-03-02 00:12:27) [GET]
+  Parameters: {"id"=>"4b8bd95399e0bf5acf000002"}
+Rendering template within layouts/application
+Rendering projects/show
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/projects/4b8bd95399e0bf5acf000002]
+
+
+Processing ProjectsController#edit (for 127.0.0.1 at 2010-03-02 00:14:00) [GET]
+  Parameters: {"id"=>"4b8bd95399e0bf5acf000002"}
+Rendering template within layouts/application
+Rendering projects/edit
+Rendered projects/_form (3.1ms)
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://localhost/projects/4b8bd95399e0bf5acf000002/edit]
+
+
+Processing ProjectsController#update (for 127.0.0.1 at 2010-03-02 00:14:05) [PUT]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"JIEv1on9PUTnOe8+FYsULuYYWTz8JVqHzqF650FPkZg=", "id"=>"4b8bd95399e0bf5acf000002", "project"=>{"name"=>""}}
+Rendering template within layouts/application
+Rendering projects/edit
+Rendered projects/_form (6.0ms)
+Completed in 16ms (View: 8, DB: 0) | 200 OK [http://localhost/projects/4b8bd95399e0bf5acf000002]
+
+
+Processing ProjectsController#update (for 127.0.0.1 at 2010-03-02 00:14:45) [PUT]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"JIEv1on9PUTnOe8+FYsULuYYWTz8JVqHzqF650FPkZg=", "id"=>"4b8bd95399e0bf5acf000002", "project"=>{"name"=>"dsadsa"}}
+Redirected to http://localhost:3000/projects/4b8bd95399e0bf5acf000002
+Completed in 8ms (DB: 0) | 302 Found [http://localhost/projects/4b8bd95399e0bf5acf000002]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-03-02 00:14:45) [GET]
+  Parameters: {"id"=>"4b8bd95399e0bf5acf000002"}
+Rendering template within layouts/application
+Rendering projects/show
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/projects/4b8bd95399e0bf5acf000002]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-03-02 00:14:47) [GET]
+Rendering template within layouts/application
+Rendering projects/index
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#new (for 127.0.0.1 at 2010-03-02 00:14:48) [GET]
+Rendering template within layouts/application
+Rendering projects/new
+Rendered projects/_form (2.3ms)
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/projects/new]
+
+
+Processing ProjectsController#create (for 127.0.0.1 at 2010-03-02 00:14:49) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"JIEv1on9PUTnOe8+FYsULuYYWTz8JVqHzqF650FPkZg=", "project"=>{"name"=>""}}
+Rendering template within layouts/application
+Rendering projects/new
+Rendered projects/_form (4.8ms)
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-03-02 00:18:59) [GET]
+Rendering template within layouts/application
+Rendering projects/index
+Completed in 45ms (View: 26, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#new (for 127.0.0.1 at 2010-03-02 00:19:02) [GET]
+Rendering template within layouts/application
+Rendering projects/new
+Rendered projects/_form (64.3ms)
+Completed in 81ms (View: 75, DB: 0) | 200 OK [http://localhost/projects/new]
+
+
+Processing ProjectsController#new (for 127.0.0.1 at 2010-03-02 00:20:10) [GET]
+Rendering template within layouts/application
+Rendering projects/new
+Rendered projects/_form (3.6ms)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/projects/new]
+
+
+Processing ProjectsController#new (for 127.0.0.1 at 2010-03-02 00:20:12) [GET]
+Rendering template within layouts/application
+Rendering projects/new
+Rendered projects/_form (2.8ms)
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/projects/new]
+
+
+Processing ProjectsController#create (for 127.0.0.1 at 2010-03-02 00:20:17) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"JIEv1on9PUTnOe8+FYsULuYYWTz8JVqHzqF650FPkZg=", "project"=>{"name"=>"dsad", "priority"=>"3"}}
+Redirected to http://localhost:3000/projects/4b8bdb3199e0bf5b7a000004
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/projects]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-03-02 00:20:17) [GET]
+  Parameters: {"id"=>"4b8bdb3199e0bf5b7a000004"}
+Rendering template within layouts/application
+Rendering projects/show
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://localhost/projects/4b8bdb3199e0bf5b7a000004]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-03-02 00:20:19) [GET]
+Rendering template within layouts/application
+Rendering projects/index
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-03-02 00:20:21) [GET]
+  Parameters: {"id"=>"4b8bdb3199e0bf5b7a000004"}
+Rendering template within layouts/application
+Rendering projects/show
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://localhost/projects/4b8bdb3199e0bf5b7a000004]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-03-02 00:20:22) [GET]
+Rendering template within layouts/application
+Rendering projects/index
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-03-02 00:20:23) [GET]
+  Parameters: {"id"=>"4b8bd95399e0bf5acf000002"}
+Rendering template within layouts/application
+Rendering projects/show
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://localhost/projects/4b8bd95399e0bf5acf000002]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-03-02 00:29:20) [GET]
+  Parameters: {"id"=>"4b8bd95399e0bf5acf000002"}
+Rendering template within layouts/application
+Rendering projects/show
+Completed in 49ms (View: 29, DB: 0) | 200 OK [http://localhost/projects/4b8bd95399e0bf5acf000002]
+
+
+Processing ProjectsController#edit (for 127.0.0.1 at 2010-03-02 00:29:21) [GET]
+  Parameters: {"id"=>"4b8bd95399e0bf5acf000002"}
+Rendering template within layouts/application
+Rendering projects/edit
+Rendered projects/_form (4.4ms)
+Completed in 21ms (View: 14, DB: 0) | 200 OK [http://localhost/projects/4b8bd95399e0bf5acf000002/edit]
+
+
+Processing ProjectsController#update (for 127.0.0.1 at 2010-03-02 00:29:32) [PUT]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"JIEv1on9PUTnOe8+FYsULuYYWTz8JVqHzqF650FPkZg=", "id"=>"4b8bd95399e0bf5acf000002", "project"=>{"name"=>"i dont care", "priority"=>"1"}}
+Redirected to http://localhost:3000/projects/4b8bd95399e0bf5acf000002
+Completed in 13ms (DB: 0) | 302 Found [http://localhost/projects/4b8bd95399e0bf5acf000002]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-03-02 00:29:32) [GET]
+  Parameters: {"id"=>"4b8bd95399e0bf5acf000002"}
+Rendering template within layouts/application
+Rendering projects/show
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/projects/4b8bd95399e0bf5acf000002]
+
+
+Processing ProjectsController#edit (for 127.0.0.1 at 2010-03-02 00:29:34) [GET]
+  Parameters: {"id"=>"4b8bd95399e0bf5acf000002"}
+Rendering template within layouts/application
+Rendering projects/edit
+Rendered projects/_form (3.5ms)
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/projects/4b8bd95399e0bf5acf000002/edit]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-03-02 00:29:35) [GET]
+  Parameters: {"id"=>"4b8bd95399e0bf5acf000002"}
+Rendering template within layouts/application
+Rendering projects/show
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://localhost/projects/4b8bd95399e0bf5acf000002]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-03-02 00:29:39) [GET]
+Rendering template within layouts/application
+Rendering projects/index
+Completed in 83ms (View: 14, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-03-02 00:29:41) [GET]
+  Parameters: {"id"=>"4b8bdb3199e0bf5b7a000004"}
+Rendering template within layouts/application
+Rendering projects/show
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://localhost/projects/4b8bdb3199e0bf5b7a000004]
+
+
+Processing ProjectsController#edit (for 127.0.0.1 at 2010-03-02 00:29:42) [GET]
+  Parameters: {"id"=>"4b8bdb3199e0bf5b7a000004"}
+Rendering template within layouts/application
+Rendering projects/edit
+Rendered projects/_form (3.6ms)
+Completed in 13ms (View: 6, DB: 0) | 200 OK [http://localhost/projects/4b8bdb3199e0bf5b7a000004/edit]
+
+
+Processing ProjectsController#update (for 127.0.0.1 at 2010-03-02 00:29:51) [PUT]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"JIEv1on9PUTnOe8+FYsULuYYWTz8JVqHzqF650FPkZg=", "id"=>"4b8bdb3199e0bf5b7a000004", "project"=>{"name"=>"study", "priority"=>"3"}}
+Redirected to http://localhost:3000/projects/4b8bdb3199e0bf5b7a000004
+Completed in 13ms (DB: 0) | 302 Found [http://localhost/projects/4b8bdb3199e0bf5b7a000004]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-03-02 00:29:51) [GET]
+  Parameters: {"id"=>"4b8bdb3199e0bf5b7a000004"}
+Rendering template within layouts/application
+Rendering projects/show
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://localhost/projects/4b8bdb3199e0bf5b7a000004]
+
+
+Processing ProjectsController#edit (for 127.0.0.1 at 2010-03-02 00:29:53) [GET]
+  Parameters: {"id"=>"4b8bdb3199e0bf5b7a000004"}
+Rendering template within layouts/application
+Rendering projects/edit
+Rendered projects/_form (3.8ms)
+Completed in 13ms (View: 6, DB: 0) | 200 OK [http://localhost/projects/4b8bdb3199e0bf5b7a000004/edit]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-03-02 00:29:55) [GET]
+  Parameters: {"id"=>"4b8bdb3199e0bf5b7a000004"}
+Rendering template within layouts/application
+Rendering projects/show
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://localhost/projects/4b8bdb3199e0bf5b7a000004]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-03-02 00:29:58) [GET]
+Rendering template within layouts/application
+Rendering projects/index
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-02 00:30:06) [GET]
+
+ActionController::RoutingError (No route matches "/tests" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-02 00:30:10) [GET]
+
+ActionController::RoutingError (No route matches "/tesks" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-02 00:30:14) [GET]
+Rendering template within layouts/application
+Rendering tasks/index
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#new (for 127.0.0.1 at 2010-03-02 00:30:16) [GET]
+Rendering template within layouts/application
+Rendering tasks/new
+Rendered tasks/_form (13.2ms)
+Completed in 33ms (View: 26, DB: 0) | 200 OK [http://localhost/tasks/new]
+
+
+Processing TasksController#create (for 127.0.0.1 at 2010-03-02 00:30:24) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"JIEv1on9PUTnOe8+FYsULuYYWTz8JVqHzqF650FPkZg=", "task"=>{"name"=>"ahah", "completed"=>"0", "project_id"=>"4b8bd95399e0bf5acf000002"}}
+Redirected to http://localhost:3000/tasks/4b8bdd9099e0bf5b81000002
+Completed in 8ms (DB: 0) | 302 Found [http://localhost/tasks]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-03-02 00:30:24) [GET]
+  Parameters: {"id"=>"4b8bdd9099e0bf5b81000002"}
+Rendering template within layouts/application
+Rendering tasks/show
+Completed in 18ms (View: 11, DB: 0) | 200 OK [http://localhost/tasks/4b8bdd9099e0bf5b81000002]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-02 00:30:29) [GET]
+Rendering template within layouts/application
+Rendering tasks/index
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-03-02 00:31:11) [GET]
+  Parameters: {"id"=>"4b8bdd9099e0bf5b81000002"}
+Rendering template within layouts/application
+Rendering tasks/show
+Completed in 23ms (View: 15, DB: 0) | 200 OK [http://localhost/tasks/4b8bdd9099e0bf5b81000002]
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2010-03-02 00:34:07) [GET]
+  Parameters: {"id"=>"4b8bdd9099e0bf5b81000002"}
+Rendering template within layouts/application
+Rendering tasks/edit
+Rendered tasks/_form (10.2ms)
+Completed in 23ms (View: 17, DB: 0) | 200 OK [http://localhost/tasks/4b8bdd9099e0bf5b81000002/edit]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-03-02 00:34:09) [GET]
+  Parameters: {"id"=>"4b8bdd9099e0bf5b81000002"}
+Rendering template within layouts/application
+Rendering tasks/show
+Completed in 18ms (View: 11, DB: 0) | 200 OK [http://localhost/tasks/4b8bdd9099e0bf5b81000002]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-02 00:34:10) [GET]
+Rendering template within layouts/application
+Rendering tasks/index
+Completed in 13ms (View: 6, DB: 0) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#new (for 127.0.0.1 at 2010-03-02 00:34:11) [GET]
+Rendering template within layouts/application
+Rendering tasks/new
+Rendered tasks/_form (9.8ms)
+Completed in 18ms (View: 12, DB: 0) | 200 OK [http://localhost/tasks/new]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-02 00:34:12) [GET]
+Rendering template within layouts/application
+Rendering tasks/index
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/tasks]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-02 00:34:13) [GET]
+
+ActionController::RoutingError (No route matches "/tesks" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-02 00:34:13) [GET]
+
+ActionController::RoutingError (No route matches "/tests" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-03-02 00:34:14) [GET]
+Rendering template within layouts/application
+Rendering projects/index
+Completed in 18ms (View: 9, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#edit (for 127.0.0.1 at 2010-03-02 00:34:16) [GET]
+  Parameters: {"id"=>"4b8bdb3199e0bf5b7a000004"}
+Rendering template within layouts/application
+Rendering projects/edit
+Rendered projects/_form (3.6ms)
+Completed in 13ms (View: 6, DB: 0) | 200 OK [http://localhost/projects/4b8bdb3199e0bf5b7a000004/edit]
+
+
+Processing ProjectsController#update (for 127.0.0.1 at 2010-03-02 00:34:17) [PUT]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"JIEv1on9PUTnOe8+FYsULuYYWTz8JVqHzqF650FPkZg=", "id"=>"4b8bdb3199e0bf5b7a000004", "project"=>{"name"=>"study", "priority"=>"3"}}
+Redirected to http://localhost:3000/projects/4b8bdb3199e0bf5b7a000004
+Completed in 14ms (DB: 0) | 302 Found [http://localhost/projects/4b8bdb3199e0bf5b7a000004]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-03-02 00:34:17) [GET]
+  Parameters: {"id"=>"4b8bdb3199e0bf5b7a000004"}
+Rendering template within layouts/application
+Rendering projects/show
+Completed in 13ms (View: 6, DB: 0) | 200 OK [http://localhost/projects/4b8bdb3199e0bf5b7a000004]
+
+
+Processing ProjectsController#edit (for 127.0.0.1 at 2010-03-02 00:34:18) [GET]
+  Parameters: {"id"=>"4b8bdb3199e0bf5b7a000004"}
+Rendering template within layouts/application
+Rendering projects/edit
+Rendered projects/_form (3.6ms)
+Completed in 13ms (View: 6, DB: 0) | 200 OK [http://localhost/projects/4b8bdb3199e0bf5b7a000004/edit]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-03-02 00:34:20) [GET]
+Rendering template within layouts/application
+Rendering projects/index
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#edit (for 127.0.0.1 at 2010-03-02 00:34:21) [GET]
+  Parameters: {"id"=>"4b8bd95399e0bf5acf000002"}
+Rendering template within layouts/application
+Rendering projects/edit
+Rendered projects/_form (3.7ms)
+Completed in 13ms (View: 6, DB: 0) | 200 OK [http://localhost/projects/4b8bd95399e0bf5acf000002/edit]
+
+
+Processing ProjectsController#update (for 127.0.0.1 at 2010-03-02 00:34:22) [PUT]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"JIEv1on9PUTnOe8+FYsULuYYWTz8JVqHzqF650FPkZg=", "id"=>"4b8bd95399e0bf5acf000002", "project"=>{"name"=>"i dont care", "priority"=>"1"}}
+Redirected to http://localhost:3000/projects/4b8bd95399e0bf5acf000002
+Completed in 13ms (DB: 0) | 302 Found [http://localhost/projects/4b8bd95399e0bf5acf000002]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-03-02 00:34:22) [GET]
+  Parameters: {"id"=>"4b8bd95399e0bf5acf000002"}
+Rendering template within layouts/application
+Rendering projects/show
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://localhost/projects/4b8bd95399e0bf5acf000002]
+
+
+Processing ProjectsController#edit (for 127.0.0.1 at 2010-03-02 00:34:23) [GET]
+  Parameters: {"id"=>"4b8bd95399e0bf5acf000002"}
+Rendering template within layouts/application
+Rendering projects/edit
+Rendered projects/_form (3.6ms)
+Completed in 13ms (View: 6, DB: 0) | 200 OK [http://localhost/projects/4b8bd95399e0bf5acf000002/edit]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-03-02 00:34:24) [GET]
+  Parameters: {"id"=>"4b8bd95399e0bf5acf000002"}
+Rendering template within layouts/application
+Rendering projects/show
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/projects/4b8bd95399e0bf5acf000002]
